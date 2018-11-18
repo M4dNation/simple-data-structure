@@ -1,0 +1,12 @@
+language: node_js
+install:
+  - yarn
+  - yarn global add codecov
+node_js:
+  - "10"
+  - "8"
+notifications:
+  email: false
+script:
+  - jest
+  - codecov
