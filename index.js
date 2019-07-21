@@ -1,9 +1,6 @@
-const Queue = require("src/Queue");
-const Stack = require("src/Stack");
-const Tree = require("src/Tree");
+const { Queue } = require("simple-queues");
+const { Stack } = require("simple-stacks");
+const { Tree, TreeNode } = require("simple-nary-trees");
+const { LinkedList, LinkedListNode } = require("simple-linked-lists");
 
-export {
-    Queue,
-    Stack,
-    Tree
-};
+export { Queue, Stack, Tree, TreeNode, LinkedList, LinkedListNode };

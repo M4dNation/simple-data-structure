@@ -1,19 +1,65 @@
 {
   "name": "simple-data-structure",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "keywords": [
     "data-structure",
-    "simple"
+    "simple",
+    "stack",
+    "queue",
+    "tree",
+    "linked-list"
   ],
   "description": "Simple data structure implementation.",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "lint": "xo"
   },
   "repository": "https://github.com/M4dNation/simple-data-structure",
   "license": "MIT",
+  "dependencies": {
+    "simple-linked-lists": "1.0.8",
+    "simple-nary-trees": "1.0.1",
+    "simple-queues": "1.0.5",
+    "simple-stacks": "1.0.5"
+  },
   "devDependencies": {
-    "jest": "^23.6.0"
+    "jest": "24.8.0",
+    "xo": "0.24.0"
+  },
+  "prettier": {
+    "tabWidth": 2,
+    "singleQuote": false,
+    "trailingComma": "es5",
+    "bracketSpacing": true,
+    "jsxBracketSameLine": true
+  },
+  "xo": {
+    "space": 2,
+    "prettier": true,
+    "rules": {
+      "promise/prefer-await-to-then": "warn"
+    },
+    "ignores": [
+      "node_modules"
+    ],
+    "overrides": [
+      {
+        "files": [
+          "tests/**"
+        ],
+        "globals": [
+          "describe",
+          "test",
+          "expect",
+          "afterEach",
+          "beforeEach",
+          "beforeAll",
+          "jest",
+          "jasmine"
+        ]
+      }
+    ]
   },
   "jest": {
     "coverageDirectory": "./coverage/",
